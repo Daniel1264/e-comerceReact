@@ -1,0 +1,11 @@
+.similar_products_container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.similar_products_title {
+    text-align: center;
+    padding: 20px;
+}

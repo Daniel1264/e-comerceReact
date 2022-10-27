@@ -1,0 +1,37 @@
+.purchase {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: var(--bg-color-red);
+}
+.header_purchase {
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid black;
+}
+.purchase_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.purchase_products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    padding: 5px;
+}
+.purchase_quantity {
+    text-align: center;
+    width: 40px;
+    height: max-content;
+    padding: 10px;
+    background-color: bisque;
+}
+.purchase_price {
+    color: white;
+}
+.purchase_price::before {
+    content: '$';
+    color: white;
+}

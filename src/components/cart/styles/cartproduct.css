@@ -1,0 +1,14 @@
+.cart_p {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.cart_p_icon {
+    font-size: 20px;
+    background-color: var(--bg-color-red);
+    color: white;
+}
+.cart_p_btn {
+    cursor: pointer;
+}

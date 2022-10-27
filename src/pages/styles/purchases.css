@@ -1,0 +1,17 @@
+.purchases {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.purchases_title {
+    text-align: center;
+}
+
+.purchases_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: auto;
+}
