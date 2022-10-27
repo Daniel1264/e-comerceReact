@@ -7,6 +7,7 @@ import './styles/home.css'
 import PurchaseMade from '../components/sharedMessages/PurchaseMade'
 import FilterCategory from '../components/home/FilterCategory'
 import FilterPrice from '../components/home/FilterPrice'
+import OrderByPrice from '../components/home/OrderByPrice'
 const Home = () => {
   
   const [inputText, setInputText] = useState('')
@@ -50,6 +51,7 @@ const Home = () => {
         setFilterByPrice = {setFilterByPrice}
       />
       <FilterCategory />
+      <OrderByPrice />
     <PurchaseMade 
       showMessage = {showMessage}
       setShowMessage = {setShowMessage}
