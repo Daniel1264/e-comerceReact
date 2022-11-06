@@ -1,3 +1,6 @@
+.home {
+    margin-top: 70px;
+}
 .home_container {
     padding: 20px;
     display: flex;
@@ -7,4 +10,42 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+.home_filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 50px;
+    gap: 1rem;
+    z-index: 1;
+    left: 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+    transition: left .4s ease;
+}
+.home_filters_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    top: 50px;
+    left: -300px;
+    gap: 1rem;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
+    transition: left .4s ease;
+}
+
+
+.home_container_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem
 }

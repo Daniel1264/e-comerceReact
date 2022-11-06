@@ -1,0 +1,19 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.price_text {
+    text-align: center;
+}
+.price_btn {
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: .4s ease;
+}
+.price_btn:hover {
+    background-color: var(--bg-color-red);
+    transition: .4s ease;
+    color: white;
+}

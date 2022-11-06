@@ -17,6 +17,7 @@ const Home = () => {
     from: 0,
     to: Infinity
   })
+  const [filterMenu, setFilterMenu] = useState(false)
 
 
   const products = useSelector(state => state.products )
@@ -41,21 +42,25 @@ const Home = () => {
   }
 
 
+
+
   return (
     <main className='home'>
     <InputSearch 
+    setFilterMenu = {setFilterMenu}
+    filterMenu = {filterMenu}
       setInputText = {setInputText}
       inputText = {inputText}
     />
-      <FilterPrice 
+    <div className='home_container_info'>
+
+    <div className={filterMenu ? 'home_filters' : 'home_filters_show'}>
+    <FilterPrice 
         setFilterByPrice = {setFilterByPrice}
       />
       <FilterCategory />
       <OrderByPrice />
-    <PurchaseMade 
-      showMessage = {showMessage}
-      setShowMessage = {setShowMessage}
-    />
+      </div>
       <div className='home_container'>
         {
           filterByText?.filter(calbackFilterPrice).map(product => (
@@ -68,6 +73,14 @@ const Home = () => {
           ))
         }
       </div>
+    </div>
+
+    <PurchaseMade 
+      showMessage = {showMessage}
+      setShowMessage = {setShowMessage}
+    />
+
+
     </main>
   )
 }

@@ -1,14 +1,29 @@
 .input_container {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .input {
     width: 500px;
-    margin:auto ;
     margin-top: 30px;
     margin-bottom: 20px;
-    display: block;
     padding: 10px;
     outline: none;
     border: none;
     background-color: rgb(226, 226, 226);
+}
+.filter_search {
+    height: max-content;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.filter_search:hover {
+    background-color: var(--bg-color-red);
+    color: white;
+    transition: .4s ease;
 }

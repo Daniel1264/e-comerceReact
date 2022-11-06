@@ -1,21 +1,25 @@
 .cart {
     width: 100%;
     right: 0;
-    background-color: rebeccapurple;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    gap: 1rem;
 }
 .delete_cart {
     display: none;
 }
 .cart_container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 .cart_btn {
     width: 400px;
+    padding: 30px;
+    background-color: var(--bg-color-red);
 }

@@ -20,6 +20,7 @@ const CartProduct = ({product}) => {
         .catch(err => console.log(err))
     }
 
+
     console.log(product);
   return (
     <article className='cart_p'>

@@ -43,10 +43,10 @@ const LoginScreen = () => {
    }
  
   return (
-    <div className='form_container'>
-      <form className='form' onSubmit={handleSubmit(submit)}>
+    <div className='form_container_login'>
+      <form className='form_login' onSubmit={handleSubmit(submit)}>
         <h3 className='form_title'>Bienvenido a e-commerce</h3>
-      <div className='form_container_login'>
+      <div className='form_container_login_data'>
         <ul>
           <li>Correo: <span>ramosdaniel014@academlo.com</span></li>
           <li>contraseña: <span>crypt0</span></li>

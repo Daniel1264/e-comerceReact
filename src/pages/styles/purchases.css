@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 90%;
     margin: auto;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 .purchases_title {

@@ -4,8 +4,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    position: relative;
+    position: fixed;
     height: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(105, 104, 104, 0.329);
+    z-index: 1;
 }
 
 .header_link_title {
@@ -28,7 +31,7 @@
 }
 .header_icon {
     font-size: 30px;
-    color: aqua;
+    color: var(--bg-color-red);
 }
 .header_nav {
     position: absolute;
@@ -36,11 +39,14 @@
     width: 60%;
     right: -100%;
     transition: right .8s ease;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
 }
 
 .header_nav_show {
     right: 0;
     transition: right .8s ease;
+
 }
 .header_list {
     display: flex;
@@ -51,7 +57,7 @@
     height: 600px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     .header_nav {
         position:relative;
         display: flex;
@@ -59,6 +65,8 @@
         top: 0;
         right: 0;
         width: auto;
+        box-shadow: none;
+
     }
     .header_list {
         flex-direction: row;

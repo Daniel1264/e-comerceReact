@@ -1,0 +1,15 @@
+.filter_category {
+    padding: 5px;
+}
+.filter_category_list {
+    padding: 10px;
+}
+.filter_category_option {
+    width: 100%;
+    transition: background-color .4s ease;
+    cursor: pointer;
+}
+.filter_category_option:hover {
+    background-color: aqua;
+    transition: background-color .4s ease;
+}

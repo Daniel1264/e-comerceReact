@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { getProductsByCatgory } from '../../store/slices/products.slice'
 import { getAllProducts } from '../../store/slices/products.slice'
 import { useDispatch } from 'react-redux'
-
+import './styles/filtercategory.css'
 const FilterCategory = () => {
 
     const [categories, setCategories] = useState()
@@ -30,13 +30,13 @@ const FilterCategory = () => {
 
 
   return (
-    <div>
+    <div className='filter_category'>
       <h2>categoryes</h2>
-      <ul>
-      <li onClick={()=> handleFetchCategorie()}>All products</li>
+      <ul className='filter_category_list'>
+      <li className='filter_category_option' onClick={()=> handleFetchCategorie()}>All products</li>
         {
             categories?.map(categorie => (
-                <li style={{cursor: 'pointer'}} onClick={() => handleFetchCategorie(categorie.id)} key= {categorie.id}>{categorie.name}</li>
+                <li className='filter_category_option' style={{cursor: 'pointer'}} onClick={() => handleFetchCategorie(categorie.id)} key= {categorie.id}>{categorie.name}</li>
             ))
         }
       </ul>
